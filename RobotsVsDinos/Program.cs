@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RobotsVsDinos.Robots;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace RobotsVsDinos
     {
         static void Main(string[] args)
         {
+            Armory arm = new Armory();
 
 
         }
