@@ -13,9 +13,9 @@ namespace RobotsVsDinos
         
 
 
-        public Dino dino1 = new Dino("Dr. Raptor\t");
-        public Dino dino2 = new Dino("T-Rob\t\t");
-        public Dino dino3 = new Dino("Sloth-A-Saurs\t");
+        public Dino dino1 = new Dino("Dr. Raptor     ");
+        public Dino dino2 = new Dino("T-Rob          ");
+        public Dino dino3 = new Dino("Sloth-A-Saurs  ");
 
         //Constructor
         public Herd()

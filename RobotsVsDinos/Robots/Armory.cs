@@ -17,6 +17,7 @@ namespace RobotsVsDinos.Robots
         {
             weaponsArray = new List<Weapon>();
             weaponsChoice = new List<Weapon>();
+            weaponsArray.Add(new Weapon("Missle  ", 100));
             weaponsArray.Add(new Weapon("Sword  ", 30));
             weaponsArray.Add(new Weapon("Blaster", 50));
             weaponsArray.Add(new Weapon("Bat    ", 20));

@@ -39,7 +39,8 @@ namespace RobotsVsDinos
             {
                 Console.WriteLine((i + 1) + "  " + attackNames[i] + "    damage: " + attackDamage[i]);
             }
-            Console.WriteLine("Please select a number to pick an attack");
+            Console.WriteLine("Please type the number to pick the Dino attack:");
+            
             return attackDamage[int.Parse(Console.ReadLine()) - 1];
         }
     }
