@@ -10,9 +10,12 @@ namespace RobotsVsDinos
     {
         //member Variables 
         public List<Dino> herd;
-        Dino dino1 = new Dino("Dr. Raptor\t");
-        Dino dino2 = new Dino("T-Rob\t\t");
-        Dino dino3 = new Dino("Sloth-A-Saurs\t");
+        
+
+
+        public Dino dino1 = new Dino("Dr. Raptor\t");
+        public Dino dino2 = new Dino("T-Rob\t\t");
+        public Dino dino3 = new Dino("Sloth-A-Saurs\t");
 
         //Constructor
         public Herd()
@@ -24,5 +27,6 @@ namespace RobotsVsDinos
         }
 
         //member methods
+        
     }
 }

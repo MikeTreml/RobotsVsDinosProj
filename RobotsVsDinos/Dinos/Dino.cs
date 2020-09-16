@@ -13,7 +13,9 @@ namespace RobotsVsDinos
         public int health;
         public int energy;
         public int attackPower;
-
+        public string[] attackNames = { "Drool","Roar", "Tail", "Claw", "Bite" };
+        public int[] attackDamage = { 2, 6, 10, 20, 30 };
+        
         //Constructor
         public Dino(string type)
         {
@@ -22,11 +24,23 @@ namespace RobotsVsDinos
             this.type = type;
             this.health = 100;
             this.energy = 100;
-            this.attackPower = 20;
+            this.attackPower = 0;
+        }
+        public Dino()
+        {
+
         }
 
-        
-
         //member methods
+        public int DinoAttackChoice()
+        {
+            Console.Clear();
+            for (int i = 0; i < attackNames.Length; i++)
+            {
+                Console.WriteLine((i + 1) + "  " + attackNames[i] + "    damage: " + attackDamage[i]);
+            }
+            Console.WriteLine("Please select a number to pick an attack");
+            return attackDamage[int.Parse(Console.ReadLine()) - 1];
+        }
     }
 }

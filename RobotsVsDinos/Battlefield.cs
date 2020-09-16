@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace RobotsVsDinos
 {
     class Battlefield
@@ -12,7 +13,7 @@ namespace RobotsVsDinos
         public Fleet fleet;
         public Herd herd;
         int attackDrain = 10;
-
+        public Dino dinoAttack = new Dino();
 
         //consttructor
         public Battlefield()
@@ -64,8 +65,8 @@ namespace RobotsVsDinos
             Console.WriteLine("-------- Dinos -----------\n");
             for (int i = 0; i < dino.herd.Count; i++)
             {
-                Console.Write(" " + dino.herd[i].type + "   Energy:" + dino.herd[i].energy + "  Health:" + dino.herd[i].health);
-                Console.WriteLine("   " + "Claw" + "  AttackPower:" + dino.herd[i].attackPower);
+                Console.WriteLine(" " + dino.herd[i].type + "   Energy:" + dino.herd[i].energy + "  Health:" + dino.herd[i].health);
+                //Console.WriteLine("   " + "Claw" + "  AttackPower:" + dino.herd[i].attackPower);
             }
             Console.WriteLine("\n---------------------------");
             Console.WriteLine("--- Battle Feild ----------");
@@ -82,7 +83,8 @@ namespace RobotsVsDinos
         //member methods
         public void DinoAttack(Fleet robot, int robotSelect, Herd dino, int dinoSelect) // not sure if i should pass in a int value
         {
-            robot.fleet[robotSelect].health -= dino.herd[dinoSelect].attackPower;
+            
+            robot.fleet[robotSelect].health -= dino.herd[dinoSelect].attackPower + dinoAttack.DinoAttackChoice();
             dino.herd[dinoSelect].energy -= attackDrain;
             RobotDeath(robot, robotSelect);
 
@@ -112,6 +114,6 @@ namespace RobotsVsDinos
             }
 
         }
-
+       
     }
 }
