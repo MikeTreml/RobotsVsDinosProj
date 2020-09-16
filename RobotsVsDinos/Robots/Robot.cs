@@ -14,8 +14,8 @@ namespace RobotsVsDinos
         public string name;
         public int health;
         public int powerLevel;
+        //public Weapon weapon;
         public Weapon weapon;
-        public Armory armory;
 
         //Constructor
         public Robot(string name, Weapon weapon)
@@ -24,16 +24,16 @@ namespace RobotsVsDinos
             this.name = name;
             this.health = 100;
             this.powerLevel = 100;
-            this.weapon = weapon;//Not sure if i want to assign a weapon by default or at creation.
+            this.weapon = weapon;
         }
-        public Robot(string name)
-        {
-            // Every robots will start out with 100 percent health and powerlevel. 
-            this.name = name;
-            this.health = 100;
-            this.powerLevel = 100;
-            this.weapon = weapon;//Not sure if i want to assign a weapon by default or at creation.
-        }
+        //public Robot(string name)
+        //{
+        //    // Every robots will start out with 100 percent health and powerlevel. 
+        //    this.name = name;
+        //    this.health = 100;
+        //    this.powerLevel = 100;
+        //    //this.weapon = weapon;//Not sure if i want to assign a weapon by default or at creation.
+        //}
 
 
         //member methods

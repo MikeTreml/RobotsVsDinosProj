@@ -10,26 +10,24 @@ namespace RobotsVsDinos
     class Fleet
     {
         //member Variables 
-        Armory weapons = new Armory();
 
-        
-       
         public List<Robot> fleet;
-        
-        Robot robot1 = new Robot("Mr. Stabby");
-        Robot robot2 = new Robot("3-Sleepy-o");
-        Robot robot3 = new Robot("Glitch");
-        
-
+        Armory weapon;
+        //Robot robot1;
+        //Robot robot2;
+        //Robot robot3;
 
         //Constructor
         public Fleet()
         {
+            weapon = new Armory();
+            //robot2 = new Robot("Mr. Stabby", weapon.sword));
+            //robot2 = new Robot("3-Sleepy-o", weapon.bat);
+            //robot3 = new Robot("Glitch", weapon.blaster);
             fleet = new List<Robot>();
-            fleet.Add(robot1);
-            fleet.Add(robot2);
-            fleet.Add(robot3);
-            
+            fleet.Add(new Robot("Mr. Stabby\t", weapon.weaponsArray[0]));
+            fleet.Add(new Robot("Glitch\t\t", weapon.weaponsArray[1]));
+            fleet.Add(new Robot("3-Sleepy-o\t", weapon.weaponsArray[2])); 
         }
 
         //member methods

@@ -22,7 +22,7 @@ namespace RobotsVsDinos
             this.type = type;
             this.health = 100;
             this.energy = 100;
-            this.attackPower = 30;
+            this.attackPower = 102;
         }
 
         

@@ -11,7 +11,7 @@ namespace RobotsVsDinos
     {
         static void Main(string[] args)
         {
-            Armory arm = new Armory();
+            Battlefield battle = new Battlefield();
 
 
         }

@@ -9,19 +9,21 @@ namespace RobotsVsDinos.Robots
     class Armory
     {
         //member Variables 
-        public List<Weapon> armory;
+        public List<Weapon> weaponsArray;
         //don't think these need to be public since the value is being saved to a list
-        Weapon sword = new Weapon("Sword", 15);
-        Weapon blaster = new Weapon("Solo's Blaster", 5);// careful it has a hair trigger
-        Weapon bat = new Weapon("Baseball Bat", 5);
+        //public Weapon sword;
+        //public Weapon blaster; 
+        //public Weapon bat; 
         //Constructor
         public Armory()
         {
-            armory = new List<Weapon>();
-            armory.Add(sword);
-            armory.Add(blaster);
-            armory.Add(bat);
-
+            //bat = new Weapon("Bat", 5);
+            //blaster = new Weapon("Blaster", 20);
+            //sword = new Weapon("Sword", 10);
+            weaponsArray = new List<Weapon>();
+            weaponsArray.Add(new Weapon("Sword  ", 10));
+            weaponsArray.Add(new Weapon("Blaster", 20));
+            weaponsArray.Add(new Weapon("Bat\t  ", 500));
         }
         //member methods
     }
